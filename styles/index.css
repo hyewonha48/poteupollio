@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'NanumSquareNeo_400';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff2);
+    font-weight: 400;
+    font-display: swap;}
+@font-face {
+    font-family: 'NanumSquareNeo_700';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff2);
+    font-weight: 700;
+    font-display: swap;}
+/* 모바일기준 w440 */
+/* ============================================================================ 스크롤 */
+/* Firefox */
+html {scrollbar-width: 10px; scrollbar-color:#5686A6 #eee;}
+/* Opera */
+html::-o-scrollbar {width: 10px;}
+html::-o-scrollbar-thumb {background-color:#222;border-radius: 5px;}
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}
+::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}
+html {scroll-behavior:smooth;} /* 스크롤 애니메이션 효과 */
+body {background-color:#222;}
+#wrap {
+    width:440px;/* 기준너비:iphone17 pro max */
+    min-width:320px;/* 최소너비 */
+    max-width:440px;/* 최대너비(디자인별 상이) */
+    box-shadow:0 10px 10px rgba(0,0,0,0.3);
+    background-color:#fff;
+    margin:50px auto;
+    overflow-x:hidden; 
+    height:100vh;
+}
+/* background:linear-gradient(#fff,#5686A6 50%); */
+/* ============================================================================ 1.intro */
+#wrap .intro {
+    height:100vh; background-color:#5686A6;
+    display:flex; flex-flow:row nowrap;
+    justify-content:center; align-items:center;
+}
+#wrap .intro h1 {}
+#wrap .intro h1 span {color:#fff; display:block; text-align:center; line-height:130%;}
+#wrap .intro h1 span:nth-child(1) {font-size:0.88rem;}
+#wrap .intro h1 span:nth-child(2) {font-family:'NanumSquareNeo_700';}
+#wrap .intro h1 .name {margin:50px;}
+/* ============================================================================ 2.info */
+#wrap>.info {
+    height:100vh; display:flex;
+    flex-flow:column nowrap;
+    justify-content:center; align-items:center;
+}
+#wrap .info .photo {
+    width:235px; height:270px;
+    border-radius:15px;
+    background-color:#eee;
+}
+#wrap .info_wrap .photo img {width:100%;}
+#wrap .info .me {padding:30px 20px;}
+/* 쌤화면 : #wrap .info .me {padding:20px 0; display:flex; flex-flow:row wrap;justify-content:space-around;} */
+#wrap .info .me li {margin:10px; justify-content:center; text-align:center; font-size:0.88rem;}
+#wrap .info .me li:nth-child(1) {font-family:'NanumSquareNeo_700';}
+#wrap .info .me li a {}
+#wrap .info h2 {font-family:'NanumSquareNeo_700'; padding:50px;}
+#wrap .info .skill_list {
+    width:284px; display:flex;
+    flex-flow:row wrap; justify-content:center;
+    gap:30px;
+}
+#wrap .info .skill_list P {width:calc(100% - 120px) / 3; display:flex}
+#wrap .info .skill_list P img {width:100%;}
+/* ============================================================================ 3.project */
+#wrap .project_wrap {}
+#wrap .project_wrap h1 {font-family:'NanumSquareNeo_700'; display:block; text-align:center; line-height:130%;}
+/* ============================================================================ 3.project 공통 */
+#wrap .project_wrap .project {} 
+#wrap .project_wrap .project h2 {margin:30px 15px; justify-content:center; text-align:center;}
+#wrap .project_wrap .project .info {padding-left:38px; display:flex; flex-flow:column nowrap;}
+#wrap .project_wrap .project .info li {font-size:0.75rem; margin:5px;}
+#wrap .project_wrap .project .mockup {overflow: hidden; background-color: #5686A6; height:275px;}
+#wrap .project_wrap .project .mockup img {width:100%; transform:translateY(-105px);}
+#wrap .project_wrap .project .link {text-align:center;}
+#wrap .project_wrap .project .link a {padding:5px 15px; color:#fff;}
+#wrap .project_wrap .project .link .proposal {background-color: #5686A6}
+#wrap .project_wrap .project .link .proposal:hover {background-color: #0388E0;}
+#wrap .project_wrap .project .link .prototype {background-color:#888;}
+#wrap .project_wrap .project .link .prototype:hover {background-color: #0388E0;}
+/* ============================================================================ 3.project 개별 */
+/* #wrap .project_wrap .project1 {} */
+#wrap .project_wrap .project .plan {font-size:0.75rem; padding-left:30px; text-align:center; padding-bottom:20px;}
