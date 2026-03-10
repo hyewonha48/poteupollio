@@ -1,0 +1,38 @@
+/* 반응형 */
+@media screen and (min-width:600px) {
+    /* 1행 글자크기 및 여백 키우기 */
+    /* 4행 그래픽 이미지 확대 */
+    #wrap .project_wrap .project .title_thum .mockup {width:100%; height:auto;/* 100% 덮어쓰기 값, 600이상시 따라오게 */} 
+} /* 사용자가 보는 기기 너비가 600보다 크면 */
+@media screen and (min-width:840px) {
+    /* 글자크기 */
+    #wrap .intro h1 span:nth-child(1) {font-size:1.13rem;}
+    #wrap .intro h1 span:nth-child(2) {font-size:1.25rem;}
+    #wrap .intro h1 .name img {width:110%;}
+    #wrap .project_wrap h1 {font-size:1.13rem;}
+    #wrap .info .profile h2 {font-size:1.13rem;}
+    #wrap .info .profile .me li {font-size:1.13rem;}
+    #wrap .project_wrap h1 {font-size:1.13rem;}
+    /* 2행 info -> 1행 2열 레이아웃 구조변경 */
+    /* info */
+    #wrap > .info {height:auto; flex-flow:row nowrap; padding:100px 0; justify-content:center; align-items:center; } /* align-items:flex-start; */
+    #wrap .info .details {display:block; font-size:1rem;}
+    #wrap .info .details dl {margin:50px 0;}
+    #wrap .info .details dl dt {margin:20px 0;}
+    #wrap .info .details dl dd {line-height:1.5;}
+    #wrap .info .profile .skill_list p {width:calc((100% - 120px) / 5);display:flex;}
+    /* project */
+    #wrap .project_wrap .project {padding:80px 15px; width:100%; display:flex; justify-content:center; align-items:flex-start; gap:20px;}
+    #wrap .project_wrap .project .details .link {font-size:1rem; margin:50px 0 0;}
+    /* mockup + 이미지,제목 */
+    #wrap .project_wrap .project .title_thum .mockup {height:581px;}
+    #wrap .project_wrap .project .title_thum h2 {margin:30px 30px; text-align:center; }
+    #wrap .project_wrap .project .details .info li {font-size:1rem;}
+    #wrap .project_wrap .project .details .plan {font-size:1rem;}
+    /* 3행 web -> 1행 2열 레이아웃 구조변경 */
+    #wrap .project_wrap .project {display:flex; align-items:center; justify-content:center;}
+    #wrap .project_wrap .project .title_thum h2 {text-align:left;}
+    #wrap .project_wrap .project .title_thum {width:60%;}
+    #wrap .project_wrap .project .details .link {padding-bottom:50px;}
+    /* 4행 그래픽 이미지 확대 */
+} /* 사용자가 보는 기기 너비가 840보다 크면 */
